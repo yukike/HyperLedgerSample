@@ -1,0 +1,23 @@
+<head>
+  <title>HyperLedger Fabric Sample Application</title>
+</head>
+
+<body>
+  <h1>HyperLedger Fabric Sample Application</h1>
+
+  {{> balance}}
+</body>
+
+<template name="balance">
+  <p>{{senderFind}}</p>
+  <p>送金元ユーザ<input type="text" id="sender" size="20"></p>
+  <p>送金元残高: {{senderShow}}</p>
+  <br>
+  <p>{{receiveFind}}</p>
+  <p>送金先ユーザ<input type="text" id="receiver" size="20"></p>
+  <p>送金先残高: {{receiveShow}}</p>
+  <br>
+  <p>送金金額<input type="text" id="amt" size="20"></p>
+  <button id="send">送金</button>
+</template>
+
